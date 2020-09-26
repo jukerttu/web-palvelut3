@@ -11,10 +11,6 @@ const events = require('./routes/events') // Routes is defined in here
 const app = express() 
 
 // mongoose connection
-// Mongoose cloud:
-// User: Testiuser
-// Password: VQQBWuuAcNARO5W3
-// Mongoose DB url: mongodb+srv://Testiuser:VQQBWuuAcNARO5W3@cluster0.n0b6q.mongodb.net/Web_palvelut2?retryWrites=true&w=majority
 /*
 mongoose.connect('mongodb://localhost/rooms', { 
 	useNewUrlParser: true,
@@ -23,6 +19,10 @@ mongoose.connect('mongodb://localhost/rooms', {
 )
 */
 
+// Mongoose cloud:
+// User: Testiuser
+// Password: VQQBWuuAcNARO5W3
+// Mongoose DB url: mongodb+srv://Testiuser:VQQBWuuAcNARO5W3@cluster0.n0b6q.mongodb.net/Web_palvelut2?retryWrites=true&w=majority
 mongoose.connect('mongodb+srv://Testiuser:VQQBWuuAcNARO5W3@cluster0.n0b6q.mongodb.net/Web_palvelut2?retryWrites=true&w=majority', { 
 	useNewUrlParser: true,
 	useUnifiedTopology: true 
