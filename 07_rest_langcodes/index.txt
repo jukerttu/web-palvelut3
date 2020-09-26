@@ -1,0 +1,29 @@
+Testing server:
+
+run:
+
+mocha 
+
+to test server: 
+
+Example output from the test server:
+
+
+[ { code: 'fi', name: 'Finnish' },
+  { code: 'se', name: 'Swedish' },
+  { code: 'en', name: 'English' } ]
+  ✓ should list ALL langs on / GET (84ms)
+{ code: 'de', name: 'Germany' }
+  ✓ should add a SINGLE lang on route /add POST (42ms)
+{ name: 'Saksa', code: 'de', id: '4' }
+{ code: 'de', name: 'Saksa', id: '4' }
+  ✓ should update a SINGLE lang on route /update PUT
+  Langs
+    - should list list of langs on / GET
+    - should add a single lang on /add POST
+    - should add a single lang on /update PUT
+
+
+  3 passing (154ms)
+  3 pending
+
